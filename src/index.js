@@ -133,6 +133,7 @@ class Chart {
         console.log(series);
         
         for(let i = 0; i < series.length; i++){
+            ctx.fillStyle = "red";
             ctx.fillRect(this.mapXCoordinates(series[i].year, xAxisRange), this.mapYCoordinates(series[i].value, yAxisRange), 3, 3);
         }
     }
